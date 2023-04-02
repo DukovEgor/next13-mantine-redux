@@ -1,0 +1,48 @@
+{
+	"extends": [
+		"react-app",
+		"htmlacademy/react-typescript",
+		"mantine",
+		"plugin:@next/next/recommended",
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"sourceType": "module",
+		"project": ["./tsconfig.json"]
+	},
+	"plugins": ["@typescript-eslint"],
+	"rules": {
+		"no-console": "warn",
+		"no-unused-vars": "warn",
+		"@typescript-eslint/no-unused-vars": "off",
+		"indent": "off",
+		"react/jsx-curly-newline": "off",
+		"react/jsx-indent-props": "off",
+		"no-mixed-spaces-and-tabs": ["warn", "smart-tabs"],
+		"camelcase": "off",
+		"no-nested-ternary": "warn",
+		"react/react-in-jsx-scope": "off",
+		"no-param-reassign": "off",
+		"no-tabs": "off",
+		"import/no-named-as-default": "off",
+		"import/extensions": ["error", "never", { "ignorePackages": true }],
+		"@typescript-eslint/no-misused-promises": [
+			"error",
+			{
+				"checksVoidReturn": false
+			}
+		],
+		"@typescript-eslint/restrict-template-expressions": [
+			"off",
+			{
+				"checksVoidReturn": false
+			}
+		]
+	}
+}
